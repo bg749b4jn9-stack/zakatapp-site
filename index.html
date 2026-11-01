@@ -3,70 +3,87 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zakat App · BMF Trade Resources</title>
-<meta name="description" content="Zakat App by BMF TRADE RESOURCES SDN. BHD. helps salaried employees register and manage zakat salary deductions in Perlis.">
-<link rel="icon" href="logo.png">
+<meta name="color-scheme" content="light">
+<title>Zakat App · BMF Trade Resources Sdn. Bhd.</title>
+<meta name="description" content="Zakat App oleh BMF TRADE RESOURCES SDN. BHD. membantu kakitangan bergaji mendaftar dan mengurus potongan zakat gaji kepada Pusat Zakat Perlis (MAIPs).">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* Brand as the app and statement: navy banner, gold strips, light page, system font (Theme.swift). */
-:root{--navy:#093466;--blue:#0D4C99;--yellow:#FCD116;--bg:#F2F4F8;--card:#fff;--ink:#14213d;--muted:#55607a;--line:#dfe5ee;color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-header{background:var(--navy);color:#fff;padding:32px 16px}
-.wrap{max-width:820px;margin:0 auto;padding:0 16px}
-header .wrap{padding:0}
-.brand{display:flex;align-items:center;gap:16px}
-.brand img{width:64px;height:64px;border-radius:14px}
-h1{font-weight:700;font-size:30px;line-height:1.15;margin:0}
-.sub{opacity:.85;margin:4px 0 0;font-size:15px}
-.bar{height:6px;background:var(--yellow)}
-main{padding:28px 0 40px}
-section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 18px}
-h2{font-weight:700;font-size:19px;color:var(--navy);margin:0 0 8px}
+:root{--navy:#093466;--blue:#0D4C99;--yellow:#FCD116;--soft:#ECF4FA;--ink:#1d2433;--muted:#5b6475;--line:#d5dbe3;--hair:#e6eaef}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:light}
+body{background:#fff;color:var(--ink);font:16px/1.6 Inter,-apple-system,system-ui,sans-serif}
+.hd{background:var(--navy);color:#fff}
+.hd .in{max-width:880px;margin:0 auto;padding:28px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.hd img{width:64px;height:64px;flex:none}
+.hd h1{font-size:28px;font-weight:700;line-height:1.2}
+.hd .m{font-size:14px;color:#d5deea;margin-top:4px}
+.hd .ct{margin-left:auto;font-size:14px;line-height:1.9;text-align:right}
+.hd .ct a{color:#fff;text-decoration:none}
+.yb{height:6px;background:var(--yellow)}
+main{max-width:880px;margin:0 auto;padding:8px 20px 40px}
+.sec{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:32px 0 10px}
 p{margin:0 0 10px}
-ul{margin:0;padding-left:20px}
-dl{display:grid;grid-template-columns:150px 1fr;gap:8px 14px;margin:0}
-dt{color:var(--muted);font-weight:500}
-dd{margin:0;overflow-wrap:anywhere}
-a{color:var(--blue)}
 .en{color:var(--muted);font-size:14px}
-footer{background:var(--navy);color:rgba(255,255,255,.85);text-align:center;font-size:13px;padding:18px 16px;border-top:4px solid var(--yellow)}
-@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:26px}}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--soft);border-radius:8px;padding:16px}
+.card b{display:block;color:var(--navy);font-size:16px;margin-bottom:4px}
+.card span{font-size:14px;color:var(--muted)}
+.info{border:1px solid var(--line);border-radius:8px;padding:6px 18px;display:grid;grid-template-columns:170px 1fr}
+.info div{padding:9px 0;border-top:1px solid var(--hair)}
+.info div:nth-child(-n+2){border-top:none}
+.info .k{color:var(--muted)}
+.info .v{font-weight:500;overflow-wrap:anywhere}
+.info a{color:var(--blue)}
+footer{border-top:1px solid var(--hair);text-align:center;color:var(--muted);font-size:13px;padding:18px 20px 28px}
+@media (max-width:640px){
+  .hd .ct{margin-left:0;text-align:left;width:100%}
+  .cards{grid-template-columns:1fr}
+  .info{grid-template-columns:1fr}
+  .info div{border-top:none;padding:2px 0}
+  .info .k{padding-top:10px}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap brand">
+<header class="hd"><div class="in">
   <img src="logo.png" alt="Zakat App">
-  <div><h1>Zakat App</h1><p class="sub">BMF TRADE RESOURCES SDN. BHD.</p></div>
+  <div>
+    <h1>Zakat App</h1>
+    <div class="m">BMF TRADE RESOURCES SDN. BHD. · 202501052120 (1653527-U)</div>
+  </div>
+  <div class="ct">
+    <a href="mailto:support.zakatmaips@gmail.com">support.zakatmaips@gmail.com</a><br>
+    <a href="https://wa.me/601163231701">WhatsApp 011 6323 1701</a>
+  </div>
 </div></header>
-<div class="bar"></div>
-<main class="wrap">
-  <section>
-    <h2>Tentang kami</h2>
-    <p>Zakat App membantu kakitangan bergaji mendaftar dan mengurus potongan zakat gaji kepada Pusat Zakat Perlis (MAIPs): panduan pendaftaran, penyata zakat tahunan, dan bantuan melalui WhatsApp dan emel.</p>
-    <p class="en">About us: Zakat App helps salaried employees register and manage their zakat salary deductions to Pusat Zakat Perlis (MAIPs), with step-by-step guides, annual zakat statements, and support by WhatsApp and email.</p>
-  </section>
-  <section>
-    <h2>Perkhidmatan</h2>
-    <ul>
-      <li>Bantuan pendaftaran potongan zakat gaji bulanan</li>
-      <li>Penyata zakat tahunan untuk semakan pembayar</li>
-      <li>Sokongan melalui WhatsApp dan emel</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Hubungi kami</h2>
-    <dl>
-      <dt>Syarikat</dt><dd>BMF TRADE RESOURCES SDN. BHD.</dd>
-      <dt>Alamat</dt><dd>No. 5, Domestik Lorong 30, Jln Makmur, Zon Industri Kecil Limini, Simpang 3 Ijok, 45600 Bestari Jaya, Selangor, Malaysia</dd>
-      <dt>Telefon / WhatsApp</dt><dd><a href="tel:+601163231701">+60 11 6323 1701</a></dd>
-      <dt>Emel</dt><dd><a href="mailto:support.zakatmaips@gmail.com">support.zakatmaips@gmail.com</a></dd>
-    </dl>
-  </section>
-  <section id="privasi">
-    <h2>Dasar privasi</h2>
-    <p>Maklumat pembayar (nama, nombor MyKad, maklumat bank, emel dan nombor telefon) digunakan hanya untuk urusan zakat dan bayaran rebat. Maklumat disimpan dengan selamat dan dikongsi dengan amil hanya setakat yang perlu untuk membuat bayaran rebat. Nombor MyKad dan akaun bank disembunyikan sebahagiannya pada penyata.</p>
-    <p class="en">Privacy policy: Payer information (name, MyKad number, bank details, email and phone number) is used only for zakat matters and rebate payments. It is stored securely and shared with the amil only as needed to pay the rebate. MyKad and bank account numbers are partly masked on statements. To update or remove your information, contact us at the details above.</p>
-  </section>
+<div class="yb"></div>
+<main>
+  <div class="sec">Tentang kami</div>
+  <p>Zakat App membantu kakitangan bergaji mendaftar dan mengurus potongan zakat gaji kepada Pusat Zakat Perlis (MAIPs): panduan pendaftaran, penyata zakat tahunan, dan bantuan melalui WhatsApp dan emel.</p>
+  <p class="en">Zakat App helps salaried employees register and manage their zakat salary deductions to Pusat Zakat Perlis (MAIPs), with step-by-step guides, annual zakat statements, and support by WhatsApp and email.</p>
+
+  <div class="sec">Perkhidmatan</div>
+  <div class="cards">
+    <div class="card"><b>Pendaftaran</b><span>Bantuan mendaftar potongan zakat gaji bulanan</span></div>
+    <div class="card"><b>Penyata zakat</b><span>Penyata zakat tahunan untuk semakan pembayar</span></div>
+    <div class="card"><b>Sokongan</b><span>Bantuan melalui WhatsApp dan emel</span></div>
+  </div>
+
+  <div class="sec">Hubungi kami</div>
+  <div class="info">
+    <div class="k">Syarikat</div><div class="v">BMF TRADE RESOURCES SDN. BHD.</div>
+    <div class="k">No. pendaftaran</div><div class="v">202501052120 (1653527-U)</div>
+    <div class="k">Alamat</div><div class="v">No. 5, Domestik Lorong 30, Jln Makmur, Zon Industri Kecil Limini, Simpang 3 Ijok, 45600 Bestari Jaya, Selangor, Malaysia</div>
+    <div class="k">Telefon / WhatsApp</div><div class="v"><a href="tel:+601163231701">011 6323 1701</a></div>
+    <div class="k">Emel</div><div class="v"><a href="mailto:support.zakatmaips@gmail.com">support.zakatmaips@gmail.com</a></div>
+  </div>
+
+  <div class="sec" id="privasi">Dasar privasi</div>
+  <p>Maklumat pembayar (nama, nombor MyKad, maklumat bank, emel dan nombor telefon) digunakan hanya untuk urusan zakat dan bayaran rebat. Maklumat disimpan dengan selamat dan dikongsi dengan amil hanya setakat yang perlu untuk membuat bayaran rebat. Nombor MyKad dan akaun bank disembunyikan sebahagiannya pada penyata.</p>
+  <p class="en">Payer information (name, MyKad number, bank details, email and phone number) is used only for zakat matters and rebate payments. It is stored securely and shared with the amil only as needed to pay the rebate. MyKad and bank account numbers are partly masked on statements. To update or remove your information, contact us at the details above.</p>
 </main>
 <footer>© 2026 BMF TRADE RESOURCES SDN. BHD.</footer>
 </body>
